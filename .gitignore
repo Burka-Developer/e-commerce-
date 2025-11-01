@@ -1,0 +1,51 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+!.env.local.template
+
+# private keys and ssh
+*.pem
+*.key
+*.p12
+*.crt
+*.pub
+id_rsa
+id_ecdsa
+id_ed25519
+sania
+sania.pub
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Documentation files with secrets
+GOOGLE_AUTH_DEBUG.md
+INDEX.md
+OAUTH_FIX_SUMMARY.md
+README_FINAL.md
+OAUTH_QUICK_START.md
+START_HERE.md
+START_HERE_NOW.md
+*.debug.md
+*_DEBUG.md

@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "category": "Shipping & Delivery",
+      "items": [
+        { "q": "How long does delivery take?", "a": "Standard: 3-5 business days. Express: 1-2 days in major cities. Tracking provided via email." },
+        { "q": "Do you offer free shipping?", "a": "Yes, on orders above $50. Below $50, shipping charged by location." },
+        { "q": "Do you ship internationally?", "a": "Yes, to selected destinations. See shipping page." },
+        { "q": "Can I change my delivery address?", "a": "Within 2 hours of order; after that contact support immediately." },
+        { "q": "What if my package is lost?", "a": "Report within 5 days of delivery date with tracking number; we will redeliver or refund." }
+      ]
+    },
+    {
+      "category": "Returns & Refunds",
+      "items": [
+        { "q": "What is your return policy?", "a": "30-day returns; unused in original packaging; contact support to initiate." },
+        { "q": "How long for refunds?", "a": "5-7 business days after inspection to original payment method." },
+        { "q": "Worn/damaged items?", "a": "No returns for worn items. Manufacturing defects replaced free." },
+        { "q": "Return without reason?", "a": "Yes within 30 days; customer covers shipping unless defective." },
+        { "q": "Need receipt?", "a": "We can look up via email or order number; receipt speeds it up." }
+      ]
+    },
+    {
+      "category": "Products & Sizing",
+      "items": [
+        { "q": "Choose size?", "a": "Use size guide on product pages; inches/cm; team can assist." },
+        { "q": "Materials?", "a": "Premium materials; see product description for details." },
+        { "q": "Different body types?", "a": "Inclusive sizing across collections." },
+        { "q": "Customizable Abayas?", "a": "Some items customizable; contact support for options/pricing." },
+        { "q": "Care instructions?", "a": "Follow product care. Generally hand wash cold, air dry." }
+      ]
+    },
+    {
+      "category": "Payment & Orders",
+      "items": [
+        { "q": "Payment methods?", "a": "Major cards, Apple/Google Pay, secure gateways." },
+        { "q": "Payment security?", "a": "SSL + secure gateways; card data not stored." },
+        { "q": "Promo code?", "a": "Apply at checkout; see newsletter/social for codes." },
+        { "q": "Change/cancel order?", "a": "Within 1 hour; later contact support asap if unshipped." },
+        { "q": "Gift cards?", "a": "Digital gift cards available; no expiry." }
+      ]
+    },
+    {
+      "category": "Account & User",
+      "items": [
+        { "q": "Create account?", "a": "Sign up with email or Google." },
+        { "q": "Reset password?", "a": "Use 'Forgot Password' to receive email link." },
+        { "q": "Delete account?", "a": "Request deletion; processed within 7 days; irreversible." },
+        { "q": "Track order?", "a": "Go to My Orders in your account; see tracking details." },
+        { "q": "Wishlist?", "a": "Click heart on product; manage in profile." }
+      ]
+    },
+    {
+      "category": "Quality & Brand",
+      "items": [
+        { "q": "Authenticity?", "a": "100% authentic; certificates provided when applicable." },
+        { "q": "Quality guarantees?", "a": "Covered by guarantee; defects replaced/refunded." },
+        { "q": "New inventory?", "a": "Weekly drops; follow social for updates." },
+        { "q": "Request specific product?", "a": "Yes, contact us with your request." },
+        { "q": "Designer collaborations?", "a": "Yes, limited editions available periodically." }
+      ]
+    }
+  ]
+}

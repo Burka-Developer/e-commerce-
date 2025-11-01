@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand: primary #36454F (hsl(204,19%,26%)), accent #F5DEB3 (hsl(39,77%,83%)) */
+    --background: 39 77% 97%; /* very light wheat as page background */
+    --foreground: 204 19% 20%; /* deep slate for text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 204 19% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 204 19% 20%;
+
+    --primary: 204 19% 26%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 39 77% 90%; /* soft wheat tint */
+    --secondary-foreground: 204 19% 20%;
+
+    --muted: 39 77% 94%;
+    --muted-foreground: 204 19% 35%;
+
+    --accent: 39 77% 83%;
+    --accent-foreground: 204 19% 20%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 39 40% 88%;
+    --input: 39 40% 88%;
+    --ring: 204 19% 26%;
+    --radius: 0.6rem;
+
+    --chart-1: 204 19% 26%;
+    --chart-2: 39 77% 60%;
+    --chart-3: 39 40% 50%;
+    --chart-4: 204 19% 35%;
+    --chart-5: 39 30% 70%;
+  }
+
+  .dark {
+    /* Dark keeps within brand: slate backgrounds with wheat accents */
+    --background: 204 19% 10%;
+    --foreground: 39 77% 90%;
+
+    --card: 204 19% 12%;
+    --card-foreground: 39 77% 92%;
+
+    --popover: 204 19% 12%;
+    --popover-foreground: 39 77% 92%;
+
+    --primary: 39 77% 83%;
+    --primary-foreground: 204 19% 15%;
+
+    --secondary: 204 19% 18%;
+    --secondary-foreground: 39 77% 90%;
+
+    --muted: 204 19% 18%;
+    --muted-foreground: 39 30% 75%;
+
+    --accent: 39 77% 40%;
+    --accent-foreground: 204 19% 12%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 204 19% 22%;
+    --input: 204 19% 22%;
+    --ring: 39 77% 83%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans leading-relaxed antialiased;
+    scroll-behavior: smooth;
+    letter-spacing: 0.01em;
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Enhanced typography with Bricolage Grotesque */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+    letter-spacing: -0.01em;
+  }
+  
+  h1 { @apply text-3xl md:text-4xl lg:text-5xl; }
+  h2 { @apply text-2xl md:text-3xl lg:text-4xl; }
+  h3 { @apply text-xl md:text-2xl lg:text-3xl; }
+  h4 { @apply text-lg md:text-xl lg:text-2xl; }
+  h5 { @apply text-base md:text-lg lg:text-xl; }
+  h6 { @apply text-sm md:text-base lg:text-lg; }
+  
+  p {
+    @apply leading-relaxed;
+    letter-spacing: 0.015em;
+  }
+  
+  ::selection { background: hsl(var(--accent)); color: hsl(var(--accent-foreground)); }
+  a { @apply transition-colors; }
+}
+
+@layer components {
+  /* Unified card styling */
+  .card-surface {
+    @apply bg-card text-card-foreground rounded-xl border border-border shadow-sm;
+  }
+  /* Accent button */
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 font-medium tracking-wide;
+  }
+  /* Inputs */
+  .input-standard {
+    @apply h-11 rounded-lg border border-input bg-background px-4 py-2 text-base placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 font-light;
+  }
+  
+  /* Enhanced button styles */
+  button, .button {
+    @apply font-medium tracking-wide transition-all duration-300;
+  }
+
+  /* Subtle animated underline for links */
+  .hover-underline {
+    position: relative;
+  }
+  .hover-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background: hsl(var(--primary));
+    transition: width .25s ease;
+  }
+  .hover-underline:hover::after { width: 100%; }
+
+  /* Better focus outline for keyboard users */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbars while retaining scrollability */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
